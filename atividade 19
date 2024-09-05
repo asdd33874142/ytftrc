@@ -1,0 +1,30 @@
+PERGUNTA 19: #incluir usando namespace std;
+
+// Função para verificar se um número é perfeito bool isPerfect(int num) { if (num <= 1) return false; // Números menores ou iguais a 1 não são perfeitos
+
+int somaDivisores = 0;
+
+//Calcula a soma dos divisores próprios
+para (int i = 1; i <= num / 2; ++i) {
+    se (num % i == 0) {
+        somaDivisores += i;
+    }
+}
+
+// Verifica se a soma dos divisores é igual ao número
+retornar somaDivisores == num;
+}
+
+int principal() { int num;
+
+cout << "Digite um número: ";
+cin >> num;
+
+se (éPerfeito(num)) {
+    cout << num << "é um número perfeito." << fim;
+} outro {
+    cout << num << "não é um número perfeito." << fim;
+}
+
+retornar 0;
+}
