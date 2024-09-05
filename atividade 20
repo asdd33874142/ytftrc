@@ -1,0 +1,29 @@
+PERGUNTA 20: #incluir usando namespace std;
+
+// Função para ordenar o vetor usando o algoritmo Bubble Sort void bubbleSort(int arr[], int n) { for (int i = 0; i < n - 1; ++i) { for (int j = 0; j < n - i - 1; ++j) { if (arr[j] > arr[j + 1]) { // Troca arr[j] e arr[j + 1] int temp = arr[j]; arr[j] = arr[j + 1]; arr[j + 1] = temp; } } } }
+
+// Função para exibir os elementos do vetor void exibirVetor(int arr[], int n) { for (int i = 0; i < n; ++i) { cout << arr[i] << " "; } cout << endl; }
+
+int principal() { int n;
+
+cout << "Digite o número de elementos no vetor: ";
+cin >> n;
+
+int* arr = novo int[n]; // Cria um vetor dinamicamente
+
+cout << "Digite os elementos do vetor: ";
+para (int i = 0; i < n; ++i) {
+    cin >> arr[i];
+}
+
+// Ordem ou vetor
+bubbleSort(arr, n);
+
+// Exibe o vetor ordenado
+cout << "Vetor ordenado em ordem crescente: ";
+exibirVetor(arr, n);
+
+excluir[] arr; // Libera a memória alocada para o vetor
+
+retornar 0;
+}
