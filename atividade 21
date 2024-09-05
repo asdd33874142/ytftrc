@@ -1,0 +1,31 @@
+PERGUNTA 21: #incluir usando namespace std;
+
+// Função para realizar a busca linear em um vetor int buscaLinear(const int arr[], int n, int valor) { for (int i = 0; i < n; ++i) { if (arr[i] = = valor) { retornar i; // Retorna o índice onde o valor foi encontrado } } return -1; // Retorna -1 se o valor não for encontrado }
+
+int main() { int n, valor;
+
+cout << "Digite o número de elementos no vetor: ";
+cin >> n;
+
+int* arr = novo int[n]; // Cria um vetor dinamicamente
+
+cout << "Digite os elementos do vetor: ";
+para (int i = 0; i < n; ++i) {
+    cin >> arr[i];
+}
+
+cout << "Digite o valor a ser buscado: ";
+cin >> valor;
+
+int resultado = buscaLinear(arr, n, valor);
+
+se (resultado != -1) {
+    cout << "Valor " << valor << " encontrado no índice " << resultado << "." << fim;
+} outro {
+    cout << "Valor " << valor << " não encontrado no vetor." << fim;
+}
+
+excluir[] arr; // Libera a memória alocada para o vetor
+
+retornar 0;
+}
