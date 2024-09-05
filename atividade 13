@@ -1,0 +1,36 @@
+QUESTÃO 13: #include usando namespace std;
+
+int principal() { int N;
+
+cout << "Dígito o valor de N (número de termos): ";
+cin >> N;
+
+// Verifica se o valor de N é válido (positivo)
+se (N <= 0) {
+    cout << "O valor de N deve ser um número positivo." << fim;
+    retornar 1;
+}
+
+// Variáveis ​​para armazenar os termos da sequência de Fibonacci
+longo longo a = 0, b = 1, c;
+
+cout << "Os primeiros " << N << " os termos da sequência de Fibonacci são:" << endl;
+
+// Exibe o primeiro termo
+se (N >= 1) cout << a << " ";
+
+// Exibe o segundo termo
+se (N >= 2) cout << b << " ";
+
+// Calcula e exibe os seguintes termos
+para (int i = 3; i <= N; ++i) {
+    c = a + b;
+    cout << c << " ";
+    um = b;
+    b = c;
+}
+
+cout << fim;
+
+retornar 0;
+}
