@@ -1,0 +1,26 @@
+PERGUNTA 14: #incluir usando namespace std;
+
+int main() { int num, numInvertido = 0;
+
+cout << "Digite um número inteiro: ";
+cin >> num;
+
+int numOriginal = num; // Armazene o número original para exibir depois, se necessário
+
+// Converte o número para positivo se para negativo
+se (num < 0) {
+    num = -num;
+}
+
+// Inverta o número
+enquanto (num > 0) {
+    int dígito = num% 10; // Extrai o último dígito
+    numInvertido = numInvertido * 10 + digito; // Adiciona o dígito ao novo número invertido
+    num /= 10; //Remove o último dígito do número original
+}
+
+// Exibe o número invertido
+cout << "Número invertido: " << (numOriginal < 0 ? -numInvertido : numInvertido) << endl;
+
+retornar 0;
+}
