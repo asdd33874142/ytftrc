@@ -1,0 +1,17 @@
+QUESTÃO 15: #include #include // Inclui a biblioteca para a função pow using namespace std;
+
+int main() { base dupla, expoente;
+
+cout << "Digite uma base: ";
+cin >> base;
+
+cout << "Digite o expoente: ";
+cin >> expoente;
+
+//Calcula a potência usando a função pow
+double resultado = pow(base, expoente);
+
+cout << base << " elevado a " << expoente << " é: " << resultado << endl;
+
+retornar 0;
+}
