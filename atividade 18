@@ -1,0 +1,25 @@
+PERGUNTA 18: #incluir usando namespace std;
+
+// Função para calcular o Máximo Divisor Comum (MDC) usando o Algoritmo de Euclides int calcularMDC(int a, int b) { while (b != 0) { int resto = a % b; uma =b; b = resto; } retornar um; }
+
+// Função para calcular o Mínimo Múltiplo Comum (MMC) int calcularMMC(int a, int b) { if (a == 0 || b == 0) return 0; // MMC de qualquer número com 0 é 0 return (a * b) / calcularMDC(a, b); }
+
+int principal() { int num1, num2;
+
+cout << "Digite o primeiro número: ";
+cin >> num1;
+
+cout << "Digite o segundo número: ";
+cin >> num2;
+
+se (num1 < 0 || num2 < 0) {
+    cout << "Os números devem ser não-negativos." << fim;
+    retornar 1;
+}
+
+int mmc = calcularMMC(num1, num2);
+
+cout << "O Mínimo Múltiplo Comum (MMC) de " << num1 << " e " << num2 << " é: " << mmc << endl;
+
+retornar 0;
+}
